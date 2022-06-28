@@ -1,0 +1,23 @@
+button.btn {
+  border: none;
+  outline: none;
+  background-color: $main-color;
+  color: white;
+  // font-family: "DM Sans", sans-serif;
+  font-family: "Uxum Grotesque", sans-serif;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+
+  &.text-btn {
+    padding: 0;
+    background-color: transparent;
+    color: black;
+  }
+  &.dark-btn {
+    background-color: $dark-color;
+  }
+}

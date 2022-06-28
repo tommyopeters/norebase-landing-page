@@ -1,0 +1,130 @@
+.use-cases-page {
+  //   padding: 0 0;
+  text-align: center;
+
+  &.business,
+  &.startups {
+    @media (min-width: 901px) {
+      padding-top: 5rem;
+    }
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .wrap {
+      width: 100%;
+      @media (max-width: 1440px) {
+        max-width: 128rem;
+      }
+      @media (max-width: 1366px) {
+        max-width: 110rem;
+      }
+      @media (max-width: 1280px) {
+        max-width: 1024px;
+        padding-left: 5rem;
+        padding-right: 5rem;
+      }
+      @media (max-width: 900px) {
+        max-width: 600px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      @media (max-width: 768px) {
+        padding: 0 2rem;
+      }
+    }
+
+    &.services-section {
+      margin-bottom: 14rem;
+      &.blue {
+        background-color: #f5fefe;
+      }
+      .wrap {
+        h2 {
+          font-weight: 500;
+          font-size: 40px;
+          line-height: 48px;
+          margin-bottom: 1.6rem;
+        }
+        small {
+          color: #8a8b94;
+          font-size: 16px;
+          line-height: 21px;
+        }
+
+        .services {
+          min-height: 34rem;
+          margin-top: 6rem;
+          display: flex;
+          justify-content: space-between;
+          gap: 4rem;
+
+          @media (max-width: 1100px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+          }
+          @media (max-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr;
+          }
+
+          .service {
+            min-height: 100%;
+            overflow: hidden;
+            border: 0.5px solid #cdcdce;
+            border-radius: 5px;
+
+            .image-control {
+              @media (min-width: 900px) {
+                // height: 20rem;
+              }
+            }
+            .text-block {
+              display: grid;
+              grid-template-rows: 4.8rem 1fr max-content;
+              row-gap: 5px;
+              padding: 1.5rem;
+              margin-top: 1.5rem;
+              h3 {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 8px;
+              }
+              p {
+                font-size: 14px;
+                line-height: 18px;
+                text-align: center;
+                letter-spacing: -0.02em;
+                margin-bottom: 1.6rem;
+                color: #646468;
+              }
+              .buttons {
+                display: grid;
+                grid-template-columns: 5fr 4fr;
+                .btn {
+                  &.undefined,
+                  .text-btn {
+                    font-size: 14px;
+                  }
+
+                  &.undefined {
+                    color: #fc804a;
+                    background-color: #fff0ea;
+                    padding: 1.5rem 1.5rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //   &.banner-section{
+
+  //   }
+}

@@ -1,0 +1,131 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3rem;
+  background-color: $secondary-color-green;
+  color: #fbfaff;
+
+  &.dark {
+    background-color: $dark-color;
+  }
+
+  .arrow-right-up {
+    margin-left: 10px;
+    path {
+      fill: white;
+    }
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: minmax(100px, auto) 1fr minmax(auto, 300px);
+    column-gap: 10rem;
+    align-items: flex-start;
+
+    @media (max-width: 1280px) {
+      grid-template-columns: minmax(100px, auto) 1fr minmax(auto, 200px);
+    }
+    @media (max-width: 1100px) {
+      column-gap: 5rem;
+    }
+    @media (max-width: 1000px) {
+      column-gap: 3rem;
+    }
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+      row-gap: 5rem;
+    }
+
+    .logo {
+      width: 20rem;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+
+      .footer-details {
+        flex-direction: column;
+
+        p {
+          margin-bottom: 1.6rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        // flex-direction: column;
+        // gap: 2.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 5rem;
+      }
+
+      .link-category {
+        &-header {
+          text-transform: none;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 23px;
+          letter-spacing: -0.02em;
+
+          color: #829492;
+          margin-bottom: 3rem;
+
+          @media (max-width: 900px) {
+            margin-bottom: 2rem;
+          }
+        }
+        ul {
+          max-width: 125px;
+
+          @media (max-width: 900px) {
+            max-width: none;
+          }
+          li {
+            a {
+              display: flex;
+              text-decoration: none;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 21px;
+
+              letter-spacing: -0.02em;
+
+              color: #fbfaff;
+
+              img {
+                margin-left: 1.5rem;
+                height: 2.5rem;
+                width: 2.5rem;
+              }
+            }
+            &:not(:last-of-type) {
+              margin-bottom: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+    .footer-details {
+      max-width: 36rem;
+      font-size: 16px;
+      line-height: 21px;
+
+      letter-spacing: -0.02em;
+
+      ul.social-links {
+        margin-bottom: 2rem;
+        display: flex;
+        gap: 2rem;
+        li {
+          .image-control {
+            height: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}

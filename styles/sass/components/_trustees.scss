@@ -1,0 +1,31 @@
+.trustees {
+  display: flex;
+  align-items: flex-end;
+  gap: 2.5rem;
+
+  @media (max-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    column-gap: 1.5rem;
+  }
+
+  .brass {
+    grid-column: 1 / span 2;
+  }
+
+  .eden {
+    grid-column: 3 / span 2;
+  }
+  .altschool {
+    grid-column: 5 / span 2;
+  }
+  .nestcoin {
+    grid-column: 2 / span 2;
+  }
+  .patricia {
+    grid-column: 4 / span 2;
+  }
+}
