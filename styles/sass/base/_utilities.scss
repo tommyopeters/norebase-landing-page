@@ -1,0 +1,95 @@
+// Utils
+.image-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  &.vertical {
+    span {
+      height: 100% !important;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: auto !important;
+        height: 100% !important;
+      }
+
+      span {
+        height: 100% !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: auto;
+          height: 100%;
+        }
+      }
+    }
+  }
+  &.vertical-till-600 {
+    @media (min-width: 600px) {
+      span {
+        height: 100% !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: auto !important;
+          height: 100% !important;
+        }
+
+        span {
+          height: 100% !important;
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: auto;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  &:not(.vertical) {
+    span {
+      width: 100% !important;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        height: auto !important;
+        width: 100% !important;
+      }
+
+      span {
+        stroke-width: 100% !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        img {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.display-block {
+  display: block;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+.svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

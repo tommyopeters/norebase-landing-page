@@ -1,0 +1,4 @@
+Sitemap: http://www.norebase.com/sitemap.xml
+# Allow all user agents.
+User-agent: *
+Allow: /

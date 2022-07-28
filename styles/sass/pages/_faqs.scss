@@ -1,0 +1,255 @@
+.faq-page {
+  section.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff0ea;
+    padding: 17rem 5rem 8rem;
+
+    @media (max-width: 900px) {
+      padding: 10rem 5rem 8rem;
+    }
+    .wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 64px;
+        margin-bottom: 3rem;
+        text-align: center;
+
+        @media (max-width: 1024px) {
+          font-size: 4.8rem;
+        }
+      }
+      p {
+        max-width: 50rem;
+        color: #646468;
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+
+      input {
+        height: 7rem;
+        width: 58rem;
+        padding: 2.4rem;
+        border: 1px solid #12051c;
+        border-radius: 10px;
+        background-color: transparent;
+
+        &::placeholder {
+          color: #8a8b94;
+        }
+
+        @media (max-width: 900px) {
+          width: 32rem;
+        }
+      }
+    }
+  }
+  section.faqs-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 0 22rem;
+
+    overflow: hidden;
+
+    @media (max-width: 1280px) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+    @media (max-width: 900px) {
+      margin-bottom: 5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    > .wrap {
+      width: 100%;
+      max-width: 124rem;
+      @media (max-width: 1440px) {
+        max-width: 1100px;
+      }
+      @media (max-width: 1280px) {
+        max-width: 1024px;
+        padding-left: 5rem;
+        padding-right: 5rem;
+      }
+      @media (max-width: 900px) {
+        max-width: 768px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+      @media (max-width: 768px) {
+        padding: 0 2rem;
+      }
+      .faqs-nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+          padding: 1.2rem 2.4rem;
+
+          display: flex;
+          align-items: center;
+          gap: 1.2rem;
+          background: rgba(248, 248, 248, 0.92);
+          border-radius: 30px;
+
+          > li {
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+            letter-spacing: -0.02em;
+
+            transition: all 150ms ease-in-out;
+
+            cursor: pointer;
+
+            &.active {
+              min-width: 15rem;
+              border-radius: 10px;
+              background: $main-color;
+              color: #ffffff;
+            }
+            &:not(.active):hover {
+              color: $main-color;
+            }
+          }
+        }
+      }
+
+      .faqs {
+        margin-top: 7rem;
+        ul {
+          > li {
+            cursor: pointer;
+            padding-bottom: 3rem;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid rgba(130, 130, 133, 0.2);
+
+            .question {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              fill: $main-color;
+              color: $main-color;
+
+              @media (max-width: 600px) {
+                display: grid;
+                grid-template-columns: 1fr 25px;
+              }
+
+              span {
+                font-family: "Uxum Grotesque";
+                font-style: normal;
+                font-weight: 150;
+                font-size: 20px;
+                line-height: 24px;
+
+                color: #fc804a;
+              }
+
+              .arrow-down {
+                display: none;
+              }
+            }
+            .answer {
+              display: none;
+              margin-top: 2rem;
+              font-size: 16px;
+              line-height: 21px;
+              letter-spacing: -0.02em;
+
+              ol {
+                li {
+                  margin-top: 1rem;
+                }
+              }
+            }
+
+            &.open {
+              .question {
+                .arrow-down {
+                  display: block;
+                }
+                .arrow-right {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+        // label {
+        //   display: block;
+        //   padding-bottom: 3rem;
+        //   margin-bottom: 3rem;
+        //   border-bottom: 1px solid rgba(130, 130, 133, 0.2);
+
+        //   input {
+        //     display: none;
+        //     + .question {
+        //       display: flex;
+        //       align-items: center;
+        //       justify-content: space-between;
+
+        //       fill: $main-color;
+        //       color: $main-color;
+
+        //       span {
+        //         font-family: "Uxum Grotesque";
+        //         font-style: normal;
+        //         font-weight: 150;
+        //         font-size: 20px;
+        //         line-height: 24px;
+
+        //         color: #fc804a;
+        //       }
+
+        //       .arrow-down {
+        //         display: none;
+        //       }
+
+        //       + .answer {
+        //         margin-top: 3rem;
+        //         font-size: 16px;
+        //         line-height: 21px;
+        //         letter-spacing: -0.02em;
+        //         height: 0;
+        //         overflow: hidden;
+
+        //         color: #230b34;
+        //         transition: all 200ms ease-in-out;
+        //       }
+        //     }
+        //     &:checked {
+        //       + .question {
+        //         .arrow-down {
+        //           display: block;
+        //         }
+        //         .arrow-right {
+        //           display: none;
+        //         }
+        //         + .answer {
+        //           height: max-content;
+        //         }
+        //       }
+        //     }
+        //   }
+        // }
+      }
+    }
+  }
+}

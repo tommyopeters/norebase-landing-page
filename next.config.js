@@ -1,6 +1,27 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+  images: {
+    loader: "custom",
+  },
+  trailingSlash: true,
 
-module.exports = nextConfig
+  reactStrictMode: true,
+  // experimental: {
+  //   images: {
+  //     layoutRaw: true,
+  //   },
+  // },
+  webpack(config, { isServer }) {
+    // if (isServer) {
+    //   require("./scripts/sitemap-generator");
+    // }
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"],
+    });
+
+    return config;
+  },
+};
+
+module.exports = nextConfig;

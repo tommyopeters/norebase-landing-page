@@ -1,0 +1,168 @@
+.pricing_calculate {
+  display: flex;
+  justify-content: center;
+  background-image: url("../../../public/images/pricing.png");
+  background-repeat: no-repeat;
+}
+
+.pricing_cal_text {
+  padding-top: 96px;
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+}
+
+.pricing_cal_sub_text {
+  font-size: 17px;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.pricing_estimate {
+  width: 80%;
+  outline: 0.5px solid #868892;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.pricing_estimate_container {
+  padding-top: 4.2rem;
+  font-family: "DM Sans", sans-serif;
+}
+.pricing_estimate_container * {
+  font-family: "DM Sans", sans-serif !important;
+}
+@media (min-width: 600px) {
+  .pricing_estimate_container * {
+    font-size: 1.4rem !important;
+  }
+}
+.pricing_est_sub_container {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing_body_estimate {
+  padding-top: 2rem;
+  background: #ebffff;
+  border-radius: 20px;
+}
+
+.pricing_est_text {
+  color: #0e101a;
+  font-size: 16px;
+  padding-right: 2.5rem;
+}
+
+.pricing_est_total {
+  font-size: 24px;
+  font-weight: 900;
+  padding-right: 20px;
+}
+
+.pricing_est_amount {
+  font-weight: 900;
+  font-size: 24px;
+  color: #12b9ba;
+}
+.pricing_body_sub {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pricing_est_btn {
+  justify-content: center;
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 2rem;
+}
+.pricing_est_options {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.pricing_pb_text {
+  padding-bottom: 24px;
+  color: #0e101a;
+}
+
+.pricing_est_option_sub {
+  width: 80%;
+}
+
+.pricing_table {
+  padding-top: 7.75rem;
+  display: flex;
+  justify-content: center;
+}
+.pricing_table_ext {
+  padding-top: 7.75rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 115px;
+  /* padding-bottom: 120px; */
+}
+.pricing_table_sub {
+  width: 80%;
+}
+
+.pricing_setup {
+  padding-top: 115px;
+  padding-bottom: 120px;
+}
+.pricing_setup_sub {
+  display: flex;
+  justify-content: space-between;
+}
+.pricing_setup_text {
+  font-size: 40px;
+  line-height: 1.2;
+}
+.pricing_setup_sub_container {
+  width: 75%;
+  padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .pricing_cal_text {
+    font-size: 24px;
+    text-align: center;
+    line-height: 32px;
+  }
+  .pricing_cal_sub_text {
+    text-align: center;
+  }
+  .pricing_body_sub {
+    flex-direction: column;
+  }
+  .pricing_est_total {
+    padding-top: 40px;
+    font-size: 24px;
+  }
+  .pricing_setup_sub {
+    flex-direction: column;
+  }
+  .pricing_setup_sub_container {
+    width: 95%;
+  }
+  .pricing_setup_sub_container h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .pricing_works {
+    padding-top: 10px;
+    padding-bottom: 1.2rem;
+  }
+  .pricing_table_sub {
+    width: 95%;
+  }
+  .pricing_est_option_sub {
+    width: 95%;
+  }
+  .pricing_estimate {
+    width: 95%;
+  }
+}
