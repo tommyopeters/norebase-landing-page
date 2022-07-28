@@ -10,8 +10,6 @@ NODE_VERSION = "17"
 [dev]
 framework = "#static"
 
-[[plugins]]
-package = "../plugin-wrapper/"
 
 [[plugins]]
 package = "@netlify/plugin-local-install-core"
